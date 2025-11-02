@@ -1,0 +1,54 @@
+.step-card-sidebar {
+  border: 1px solid var(--border-light);
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;  
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.selected-tab{
+  background: var(--border-light);
+}
+
+.step-number {
+  background: var(--secondary);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--secondary-text);
+}
+
+.step-title {
+  flex: 1;
+  color: var(--secondary-text);
+}
+
+.step-title.light-mode {
+  color: var(--branding);
+}
+
+.step-card-sidebar:hover {
+  background: var(--border-light);
+}
+
+@media screen and (max-width:1000px){
+
+  .step-number {
+    transform: scale(0.8);
+  }
+  .step-title{
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .step-card-sidebar {
+    padding: 0.25rem;
+  }
+  
+}

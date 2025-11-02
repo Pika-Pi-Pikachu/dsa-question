@@ -1,0 +1,128 @@
+.question-card {
+  display: grid;
+  grid-template-columns: 1fr 15fr 5fr 1.5fr 1.5fr 1.5fr 1fr 1fr;
+  gap: 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  min-width: 360px;
+}
+
+.question-level {
+  font-weight: 600;
+}
+
+.easy-level {
+  color: var(--primary);
+}
+
+.medium-level {
+  color: var(--semantic-orange);
+}
+
+.hard-level {
+  color: var(--semantic-red);
+}
+
+.check-btn,
+.revision-btn,
+.note-btn {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  background-position: center;
+}
+
+.check-btn {
+  border-radius: 50%;
+  border: 1px solid #afafaf;
+}
+
+.completed {
+  background: url("../../assets/tick.svg");
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.question-completed {
+  /* text-decoration: line-through; */
+  opacity: 0.75;
+}
+
+.lecture-link img,
+.problem-link img,
+.article-link img {
+  width: 1.5rem;
+}
+
+.revision-btn {
+  background: url("../../assets/outline_star.svg");
+  background-repeat: no-repeat;
+}
+
+.revision {
+  background: url("../../assets/filled_star.svg");
+  background-repeat: no-repeat;
+}
+
+.note-btn {
+  background: url("../../assets/bookmark.svg");
+}
+
+.note {
+  background: url("../../assets/bookmark_filled.svg");
+}
+
+@media screen and (max-width: 840px) {
+  .question-card {
+    padding: 0.25rem 0;
+    gap: 1.75rem;
+  }
+
+  .check-btn,
+  .revision-btn,
+  .note-btn {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .question-card {
+    gap: 1.25rem;
+  }
+  .question-title,
+  .question-level {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .question-card {
+    gap: 0.75rem;
+  }
+
+  .check-btn,
+  .revision-btn,
+  .note-btn {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .question-card {
+    gap: 0.6rem;
+  }
+  .question-title {
+    font-size: 0.8rem;
+    max-width: 35vw;
+  }
+
+  .question-level {
+    font-size: 0.75rem;
+  }
+
+  .lecture-link,
+  .article-link,
+  .problem-link {
+    transform: scale(0.85);
+  }
+}

@@ -1,0 +1,35 @@
+.dashboard {
+  height: calc(100% - 4.5rem);
+  padding: 0 3vw;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.filters-div-left {
+  display: flex;
+  flex: 1;
+  gap: 2vw;
+}
+
+.filters-div-right {
+  display: flex;
+  gap: 2vw;
+}
+
+.show-hide-revision {
+  background: #4338ca;
+}
+.reset-btn {
+  background:#dc2626;
+}
+
+@media screen and (max-width: 500px) {
+  .dashboard {
+    padding: 0 1rem;
+  }
+}
